@@ -1,6 +1,10 @@
-### Register User
+@baseUrl = http://localhost:5000/api/v1/auth
 
-POST http://localhost:5000/api/v1/auth/register
+### =========================================
+### Register User
+### =========================================
+
+POST {{baseUrl}}/register
 Content-Type: application/json
 
 {
@@ -11,12 +15,76 @@ Content-Type: application/json
 
 ###
 
-### Login User
+### =========================================
+### Register Duplicate User
+### =========================================
 
-POST http://localhost:5000/api/v1/auth/login
+POST {{baseUrl}}/register
+Content-Type: application/json
+
+{
+  "name": "Vivek",
+  "email": "vivek@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### =========================================
+### Login User
+### =========================================
+
+POST {{baseUrl}}/login
 Content-Type: application/json
 
 {
   "email": "vivek@gmail.com",
   "password": "123456"
 }
+
+###
+
+### =========================================
+### Login Wrong Password
+### =========================================
+
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "vivek@gmail.com",
+  "password": "wrongpassword"
+}
+
+###
+
+### =========================================
+### Login Non Existing User
+### =========================================
+
+POST {{baseUrl}}/login
+Content-Type: application/json
+
+{
+  "email": "unknown@gmail.com",
+  "password": "123456"
+}
+
+###
+
+### =========================================
+### Get Current User
+### =========================================
+
+GET {{baseUrl}}/current-user
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzgxNTA2MzQxLCJleHAiOjE3ODIxMTExNDF9.0kgXd-OYFEwnWFs1g7g602Z0p4BI4LlzcD0ZmFLnxWg
+
+###
+
+### =========================================
+### Get Current User Without Token
+### =========================================
+
+GET {{baseUrl}}/current-user
+
+###
