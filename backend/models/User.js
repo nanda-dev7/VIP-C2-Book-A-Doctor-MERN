@@ -26,6 +26,11 @@ const userSchema = new mongoose.Schema(
       enum: ["user", "doctor", "admin"],
       default: "user",
     },
+    
+    isDoctor: {
+  type: Boolean,
+  default: false,
+},
 
     notifications: {
       type: Array,
