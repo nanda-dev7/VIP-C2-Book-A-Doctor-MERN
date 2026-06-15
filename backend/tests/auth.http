@@ -77,7 +77,7 @@ Content-Type: application/json
 ### =========================================
 
 GET {{baseUrl}}/current-user
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzgxNTA2MzQxLCJleHAiOjE3ODIxMTExNDF9.0kgXd-OYFEwnWFs1g7g602Z0p4BI4LlzcD0ZmFLnxWg
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjZhMmY5ZDc4NDZjNjgxYjNjYTUwNmUzMSIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTc4MTUxNTY2OCwiZXhwIjoxNzgyMTIwNDY4fQ.gAe-YsJM8H2o0TQO4eBBj-hxvuDr__r49dfdHp9tmxM
 
 ###
 
