@@ -6,7 +6,7 @@ A production-ready doctor appointment booking platform built using the MERN Stac
 
 ### Frontend
 
-https://book-a-doctor-two.vercel.app/login
+https://book-a-doctor7.vercel.app/login
 
 ### Backend API
 
